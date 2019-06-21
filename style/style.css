@@ -1,18 +1,39 @@
 
 .flex {
     display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .map {
-    height:64vw;
-    width:64vw;
+    height:1024px;
+    width:1024px;
     margin-left:auto;
     margin-right:auto;
     justify-content: center;
 }
 
-.relFrame>div {
-    height:5.5vw;
+.frame {
+    position: absolute;
+    height:100%;
+    display: -webkit-flex;
+    width:1024px;
+    height:1024px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.relFrame {
+    position: relative; 
+    align-items: center;
+    justify-content: center;
+    height:1024px;
+    width:1024px;
+    left:50%;
+    transform: translate(-50%,0);
+    height:1024px;
 }
 
 p {
@@ -20,8 +41,8 @@ p {
 }
 
 .loc {
-    height:1.62vw;
-    width:1.06vw;
+    height:26px;
+    width:17px;
     cursor: pointer;
     position: absolute;
     left:50%;
@@ -30,37 +51,38 @@ p {
 
 .ny {
     position: absolute;
-    left: 29.5vw;
-    top:25.3vw;
-    width:7.06vw;
+    left: 190px;
+    top: 396px;
+    width:113px;
 }
 
 .london {
     position: absolute;
-    left: 41.5vw;
-    top:22.5vw;
-    width:7.06vw;
+    left: 383px;
+    top:353px;
+    width:113px;
 }
 
 .bg {
     position: absolute;
-    left: 45.5vw;
-    top:24.3vw;
-    width:7.06vw;
+    left: 445px;
+    top: 375px;
+    width:113px;
 }
 
 .tokyo {
     position: absolute;
-    left: 66.7vw;
-    top:25.7vw;
-    width:7.06vw;
+    left: 788px;
+    top: 403px;
+    width:113px;
 }
 
 .sydney {
     position: absolute;
-    left: 69vw;
-    top:39.5vw;
-    width:7.06vw;
+    left: 820px;
+    top:620px;
+    bottom:398px;
+    width:113px;
 }
 
 .display {

@@ -24,7 +24,7 @@ $(document).ready(function() {
 
 
     //SCROLL ANIMATION
-    $("html, body").animate({ scrollTop: $(".map").width()/8 }, 500);
+    $("html, body").animate({ scrollTop: $(".map").width()/5 }, 500);
 
 
     //HOVER
@@ -51,12 +51,39 @@ $(document).ready(function() {
         var h = d.getUTCHours();
         var m = d.getUTCMinutes();
 
+        if (m.toString().length>2) {
+            m = "0" + m;
+        }
+
         $(".ny").find(".time").html(h - 4 + ":" + m);
         $(".london").find(".time").html(h + 1 + ":" + m);
         $(".bg").find(".time").html(h + 2 + ":" + m);
         $(".tokyo").find(".time").html(h - 15 + ":" + m);
         $(".sydney").find(".time").html(h + 14 + ":" + m);
+
+        if (h < 4) {
+            $(".ny").find(".time").html(h + 20 + ":" + m);
+        }
+
+        if (h > 23) {
+            $(".london").find(".time").html(h - 11 + ":" + m);
+        }
+
+        if (h > 22) {
+            $(".bg").find(".time").html(h - 12 + ":" + m);
+        }
+
+        if (h > 10) {
+            $(".tokyo").find(".time").html(h - 14 + ":" + m);
+        }
+
+        else if (h < 14) {
+            $(".tokyo").find(".time").html( h + 10 + ":" + m);
+        }
+
     });
+
+   
 
 
 });
