@@ -24,7 +24,7 @@ $(document).ready(function() {
 
 
     //SCROLL ANIMATION
-    $("html, body").animate({ scrollTop: $(".map").width()/5 }, 500);
+    $("html, body").animate({ scrollTop: $(".map").heihgt()/6 }, 800);
 
 
     //HOVER
