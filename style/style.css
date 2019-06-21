@@ -1,0 +1,131 @@
+
+.flex {
+    display: -webkit-flex;
+}
+
+.map {
+    height:64vw;
+    width:64vw;
+    margin-left:auto;
+    margin-right:auto;
+    justify-content: center;
+}
+
+.relFrame>div {
+    height:5.5vw;
+}
+
+p {
+    height:5.5vw;
+}
+
+.loc {
+    height:1.62vw;
+    width:1.06vw;
+    cursor: pointer;
+    position: absolute;
+    left:50%;
+    transform: translate(-50%,0);
+}
+
+.ny {
+    position: absolute;
+    left: 29.5vw;
+    top:25.3vw;
+    width:7.06vw;
+}
+
+.london {
+    position: absolute;
+    left: 41.5vw;
+    top:22.5vw;
+    width:7.06vw;
+}
+
+.bg {
+    position: absolute;
+    left: 45.5vw;
+    top:24.3vw;
+    width:7.06vw;
+}
+
+.tokyo {
+    position: absolute;
+    left: 66.7vw;
+    top:25.7vw;
+    width:7.06vw;
+}
+
+.sydney {
+    position: absolute;
+    left: 69vw;
+    top:39.5vw;
+    width:7.06vw;
+}
+
+.display {
+    text-align: center;
+    height:4.12vw;
+    width:7.06vw;
+    background:rgba(35,35,35,0.95);
+    border-radius: 0.3rem;
+    margin-top:2.3vw;
+    margin-right:auto;
+    display: none;
+}
+
+.display>p:nth-child(1) {
+    text-align: center;
+	height: 23px;
+	width: 88px;
+	color: #F8F8F8;
+	font-family: Helvetica Neue, sans-serif;
+	font-size: 20px;
+    line-height: 24px;
+    padding-top:0.4vw;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.time {
+	color: #B3FBEE;
+	font-family: Helvetica Neue, sans-serif;
+	font-size: 1.75vw;
+    line-height: 2.12vw;
+    margin-left:auto;
+    margin-right:auto;
+    transform: translate(0%,-1.8vw);
+}
+
+.bigger {
+    transition:0.1s;
+    height:2.93vw;
+    width:2vw;
+    left:50%;
+    transform: translate(-50%,-1vw);
+}
+
+.bigger2 {
+    transition:0.1s;
+    height:2.93vw;
+    width:2vw;
+    left:50%;
+    transform: translate(-50%,-1vw);
+}
+
+.ny, .london, .bg, .tokyo, .sydney {
+    display: none;
+    -webkit-animation: show 2s;
+}
+
+@-webkit-keyframes show {
+	0% {
+        opacity: 0;
+	}
+	50%{
+        opacity: 0.5;
+    }
+    50%{
+        opacity: 1
+	}
+}
