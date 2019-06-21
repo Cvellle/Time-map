@@ -51,7 +51,7 @@ $(document).ready(function() {
         var h = d.getUTCHours();
         var m = d.getUTCMinutes();
 
-        if (m.toString().length>2) {
+        if (m.toString().length<2) {
             m = "0" + m;
         }
 
