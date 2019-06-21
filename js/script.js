@@ -24,7 +24,7 @@ $(document).ready(function() {
 
 
     //SCROLL ANIMATION
-    $("html, body").animate({ scrollTop: $(".map").heihgt() - 850 }, 800);
+    $("html, body").animate({ scrollTop: $(".map").height() - 850 }, 500);
 
 
     //HOVER
@@ -65,15 +65,15 @@ $(document).ready(function() {
             $(".ny").find(".time").html(h + 20 + ":" + m);
         }
 
-        if (h > 23) {
+        else if (h > 23) {
             $(".london").find(".time").html(h - 11 + ":" + m);
         }
 
-        if (h > 22) {
+        else if (h > 22) {
             $(".bg").find(".time").html(h - 12 + ":" + m);
         }
 
-        if (h > 10) {
+        else if (h > 10) {
             $(".sydney").find(".time").html(h - 14 + ":" + m);
         }
 
@@ -83,7 +83,6 @@ $(document).ready(function() {
 
     });
 
-   
 
 
 });
