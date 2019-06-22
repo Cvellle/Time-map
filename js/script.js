@@ -59,7 +59,7 @@ $(document).ready(function() {
         $(".london").find(".time").html(h + 1 + ":" + m);
         $(".bg").find(".time").html(h + 2 + ":" + m);
         $(".tokyo").find(".time").html(h - 15 + ":" + m);
-        $(".sydney").find(".time").html(h + 14 + ":" + m);
+        $(".sydney").find(".time").html(h - 14 + ":" + m);
 
         if (h < 4) {
             $(".ny").find(".time").html(h + 20 + ":" + m);
@@ -73,12 +73,12 @@ $(document).ready(function() {
             $(".bg").find(".time").html(h - 12 + ":" + m);
         }
 
-        else if (h > 10) {
-            $(".sydney").find(".time").html(h - 14 + ":" + m);
+        else if (h < 15) {
+            $(".tokyo").find(".time").html(h + 9 + ":" + m);
         }
 
         else if (h < 14) {
-            $(".tokyo").find(".time").html( h + 10 + ":" + m);
+            $(".sydney").find(".time").html( h + 10 + ":" + m);
         }
 
     });
