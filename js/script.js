@@ -75,10 +75,9 @@ $(document).ready(function() {
 
         else if (h < 15) {
             $(".tokyo").find(".time").html(h + 9 + ":" + m);
-        }
-
-        else if (h < 14) {
-            $(".sydney").find(".time").html( h + 10 + ":" + m);
+            if (h < 14) {
+                $(".sydney").find(".time").html( h + 10 + ":" + m);
+            }
         }
 
     });
