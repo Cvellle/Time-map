@@ -61,23 +61,45 @@ $(document).ready(function() {
         $(".tokyo").find(".time").html(h - 15 + ":" + m);
         $(".sydney").find(".time").html(h - 14 + ":" + m);
 
-        if (h < 4) {
-            $(".ny").find(".time").html(h + 20 + ":" + m);
-        }
-
-        else if (h > 23) {
+        
+         if (h > 23) {
             $(".london").find(".time").html(h - 11 + ":" + m);
-        }
 
-        else if (h > 22) {
-            $(".bg").find(".time").html(h - 12 + ":" + m);
+            if (h > 22) {
+                $(".bg").find(".time").html(h - 12 + ":" + m);
+            }
         }
 
         else if (h < 15) {
             $(".tokyo").find(".time").html(h + 9 + ":" + m);
+
             if (h < 14) {
-                $(".sydney").find(".time").html( h + 10 + ":" + m);
+                $(".sydney").find(".time").html( h + 10 + ":" + m);  
+
+                if (h < 4) {
+                    $(".ny").find(".time").html(h + 20 + ":" + m);
+                }
             }
+        }
+
+        else if (h == 4) {
+            $(".ny").find(".time").html( "00" + ":" + m);
+        }
+
+        else if (h == 23) {
+            $(".london").find(".time").html( "00" + ":" + m);
+        }
+
+        else if (h == 22) {
+            $(".bg").find(".time").html( "00" + ":" + m);
+        }
+
+        else if (h == 15) {
+            $(".tokyo").find(".time").html( "00" + ":" + m);
+        }
+        
+        else if (h == 14) {
+            $(".sydney").find(".time").html( "00" + ":" + m);
         }
 
     });
