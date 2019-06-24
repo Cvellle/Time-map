@@ -70,14 +70,6 @@ $(document).ready(function() {
             }
         }
 
-        if (h > 23) {
-            $(".london").find(".time").html(h - 11 + ":" + m);
-
-            if (h > 22) {
-                $(".bg").find(".time").html(h - 12 + ":" + m);
-            }
-        }
-
         else if (h < 15) {
             $(".tokyo").find(".time").html(h + 9 + ":" + m);
 
