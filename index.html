@@ -1,68 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>World map</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="style/style.css" media="screen"/>   
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-</head>
+  <head>
+    <title>World map</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="style/style.css" media="screen" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
 
-<body>
+  <body>
+    <div class="flex">
+      <img class="map" src="images/world.png" alt="map" />
+      <div class="frame">
+        <div class="relFrame">
+          <div class="ny">
+            <img class="loc" src="images/loc.png" />
+            <div class="display">
+              <p>New York</p>
+              <p class="time"></p>
+            </div>
+          </div>
+          <div class="london">
+            <img class="loc" src="images/loc.png" />
+            <div class="display">
+              <p>London</p>
+              <p class="time">18:56</p>
+            </div>
+          </div>
+          <div class="bg">
+            <img class="loc" src="images/loc.png" />
+            <div class="display">
+              <p>Belgrade</p>
+              <p class="time">18:56</p>
+            </div>
+          </div>
+          <div class="tokyo">
+            <img class="loc" src="images/loc.png" />
+            <div class="display">
+              <p>Tokyo</p>
+              <p class="time">18:56</p>
+            </div>
+          </div>
+          <div class="sydney">
+            <img class="loc" src="images/loc.png" />
+            <div class="display">
+              <p>Syndey</p>
+              <p class="time">18:56</p>
+            </div>
+          </div>
+          <div></div>
+        </div>
+      </div>
+    </div>
 
-  
-  <div class="flex">
-    <img class="map" src="images/world.png" alt="map">
-
-    <div class="frame">
-      <div class="relFrame">
-        
-             <div class="ny">
-                <img class="loc" src="images/loc.png">
-                <div class="display">
-                  <p>New York</p>
-                  <p class="time"></p>
-                </div>
-              </div>
-              
-              <div class="london">
-                <img class="loc" src="images/loc.png">
-                <div class="display">
-                  <p>London</p>
-                  <p class="time">18:56</p>
-                </div>
-              </div>
-            
-              <div class="bg">
-                <img class="loc" src="images/loc.png">
-                <div class="display">
-                  <p>Belgrade</p>
-                  <p class="time">18:56</p>
-                </div>
-              </div>
-              
-              <div class="tokyo">
-                  <img class="loc" src="images/loc.png">
-                  <div class="display">
-                    <p>Tokyo</p>
-                    <p class="time">18:56</p>
-                  </div>
-              </div>
-      
-              <div class="sydney">
-                <img class="loc" src="images/loc.png">
-                <div class="display">
-                  <p>Syndey</p>
-                  <p class="time">18:56</p>
-                </div>
-              </div>   
-
-        <div>
-    </div>  
-</div>  
-
-<script src="js/script.js"></script>
-
-</body>
+    <script src="js/script.js"></script>
+  </body>
 </html>
